@@ -1,0 +1,32 @@
+# Programacion/*--------------------------------------------------------------------------------------------------------------------
+area del triangulo1.cpp : 
+autor: Fernando Jhor Rojas
+Fecha: 05/03/2015
+Obs: sacar el area de un triangulo
+----------------------------------------------------------------------------------------------------------------------*/
+
+#include "stdafx.h"
+#include <iostream>
+#include <cmath>
+#include "conio.h"
+
+
+using namespace std;
+int main() {
+	float a;
+	float area;
+	float b;
+	float c;
+	float p;
+	
+	cout << "Ingresar lado a: " << endl;
+	cin >> a;	cout << "Ingresar lado b: " << endl;
+	cin >> b;
+	cout << "Ingresar lado c: " << endl;
+	cin >> c;
+	p = (a+b+c)/2;
+	area = sqrtf(p*(p-a)*(p-b)*(p-c));
+	cout << "el area del triangulo es :" << area << endl;
+	return 0;
+	getch();
+}
