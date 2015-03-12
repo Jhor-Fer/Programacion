@@ -1,0 +1,24 @@
+// positivo y negativo.cpp : main project file.
+
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+
+int main()
+{
+	float a;
+	cout << "ingrese un numero:  ";
+	cin >> a;
+	if (a>0) 
+	{cout<<"el numero es positivo";
+	}
+	else
+	{cout<<"el numero es negativo";
+	}
+	 
+	
+	getch();
+	return 0;
+}
