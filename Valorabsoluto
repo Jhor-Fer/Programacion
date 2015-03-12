@@ -1,0 +1,21 @@
+// valor absoluto.cpp : main project file.
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+
+int main() {
+	float a;
+	cout << "ingrese un numero:  ";
+	cin >> a;
+	if (a<0) 
+		a = -a;
+	 
+	
+	cout << "El valor absoluto es:" << a << endl;
+	
+	getch();
+	return 0;
+}
+
