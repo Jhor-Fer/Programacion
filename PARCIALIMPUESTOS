@@ -1,0 +1,12 @@
+Proceso impuestos
+	Escribir "Ingrese su sueldo: ";
+	Leer A,I;
+	Si (A > 1600) Entonces
+		I<-A*11/100
+		Escribir "Su sueldo es mayor a 1600 su monto a pagar es: ",I;
+	Sino
+		I<-A*0/100
+		Escribir "Su sueldo es menor a 1600 la tasa es 0%";
+	Fin Si
+	
+FinProceso
