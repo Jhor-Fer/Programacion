@@ -1,0 +1,19 @@
+// examen.cpp : main project file.
+//autor: Fernando Jhor Rojas
+//
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+void main()
+{int A,I;
+ cout<<"ingrese el sueldo";
+ cin>> A;
+ if(A>1600)
+   I=A*11/100;
+   cout<<"su impuesto a pagar es:"<<I;
+ getch();
+
+}
+
