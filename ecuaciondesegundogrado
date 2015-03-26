@@ -1,0 +1,28 @@
+Proceso sin_titulo
+	Escribir "ingrese tres numeros"
+	Leer a
+	Leer b
+	Leer c
+	d <- b*b-4*a*c
+	si (d = 0) entonces
+		x<-  -b/2*a
+		escribir "solucion unica: ",x
+	sino
+		si(d>0)
+			x1<- (-b+raiz(d))/2*a
+			x2<- (-b-raiz(d))/2*a
+			Escribir "soluciones reales"
+			Escribir "X1: ",x1
+			Escribir "X2: ",x2
+			
+		sino
+			xr <- -b/2*a
+			xi <- (raiz(-d))/2*a
+			Escribir "soluciones imaginarias: " 
+			Escribir "X1:",xr,"+",xi,"i"
+			Escribir "X2:",xr,"-" xi,"i"
+			
+		FinSi
+		
+	FinSi
+	FinProceso
