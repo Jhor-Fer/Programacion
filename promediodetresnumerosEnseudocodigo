@@ -1,0 +1,19 @@
+Proceso sin_titulo
+	Escribir "ingrese tres numeros"
+	Leer a
+	Leer b
+	Leer c
+	Si (a>=0 y a<=10) Entonces
+		Si (b>=0 y b<=10) Entonces
+			Si (c>=0 y c<=10) Entonces
+				r<-(a+b+c)/3
+			Sino
+				Escribir "el numero esta fuera de rango"
+			Fin Si
+		Sino
+			Escribir "el numero esta fuera de rango"
+		Fin Si
+	Sino
+		Escribir "el numero esta fuera de rango"
+	Fin Si
+FinProceso
