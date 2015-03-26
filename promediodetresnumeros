@@ -1,0 +1,41 @@
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------
+Nombre:                  programa.cpp 
+Autor:                   Fernando Jhor 
+Fechas:                  03/26/2015
+Obs:                     Determinar el promedio de tres numeros indicando si los numeros estan fuera de rango de 0 a 10 (incluido)
+--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+
+using namespace std;
+
+void main()
+{   float a,b,c,r;
+    cout<<"escribir tres numero: ";
+    cin>>a;
+	cin>>b;
+	cin>>c;
+     if  (a>=0	&& a<=10)
+        {if   (b>=0 && b<=10)
+            {if   (c>=0 && c<=10)
+                 {r=(a+b+c)/3;
+	             cout<<"el promedio de los tres numeros es:"<<r;
+                 }
+	           else
+	             {cout<<"el numero no esta en rango: ";
+                 }
+            }
+          else
+            {cout<<"el numero no esta en rango: ";
+            }
+       } 
+      else
+       {cout<<"el numero no esta en rango: ";
+       }
+
+getch();
+
+}
