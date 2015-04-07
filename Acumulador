@@ -3,7 +3,7 @@ Nombre:               acumulador.cpp
 Autor:                Fernando Jhor
 Fecha:                07/04/2015
 Version:              V1
-Obs:                  mostrar un ejemplo de acumulador
+Obs:                  mostrar proceso de acumulador
 -----------------------------------------------------*/
 
 #include "stdafx.h"
