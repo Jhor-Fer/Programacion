@@ -1,0 +1,35 @@
+/*-----------------------------------------------------------------------------------------------------
+Nombre:              SERIE DE NUMEROS
+Autor:               Fernando Jhor Rojas
+Fecha:               09/04/2015
+Obs:                 Encontrar el numero mayor de una serie de numeros
+
+-------------------------------------------------------------------------------------------------------*/
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+
+
+using namespace std;
+
+
+void main()
+{
+int n,a,nmay,N;
+cout<<"ingrese la cantidad de numero: ";
+cin>>N;
+a=0; n=0; nmay=0;
+for (a=1; a<=N; a++)
+{
+cout<<"Introduce un numero: ";
+cin>>n;
+if (a==1) nmay=n;
+if (n>nmay) nmay=n;
+}
+cout<<"El numero mayor es: "<<nmay;
+getch();
+
+
+}
