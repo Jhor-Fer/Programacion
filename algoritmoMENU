@@ -1,0 +1,79 @@
+// Menu.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "stdlib.h"
+
+using namespace std;
+
+
+void main()
+{
+	float base, altura, area, prom, A, B, C, a, b;
+	int opcion;
+	cout<<"******MENU******"<<endl;
+	cout<<"1-.AREA DEL RECTANGULO"<<endl;
+	cout<<"2-.PROMEDIO DE DOS NUMEROS"<<endl;
+	cout<<"3-. EL MAYOR DE TRES NUMEROS"<<endl;
+	cout<<"0-.--SALIR---"<<endl;
+	cin>>opcion;
+	do{
+	switch(opcion) {
+	      case 1: cout<<"1-.AREA DEL RECTANGULO"<<endl;
+			      cout<<"ingrese la base del rectangulo"<<endl;
+				  cin>>base;
+				  cout<<".ingrese la altura del rectanguno"<<endl;
+				  cin>>altura;
+				  area=base*altura;
+				  cout<<".El area del rectangulo es: "<<area<<endl;
+				  break;
+				  
+		  case 2: cout<<"2-.PROMEDIO DE DOS NUMEROS"<<endl;
+			      cout<<"ingrese el primer numero"<<endl;
+				  cin>>a;
+				  cout<<".ingrese el promedio del segundo numero"<<endl;
+				  cin>>b;
+				  prom=a+b;
+				  cout<<".El promedio de dos numeros es: "<<prom<<endl;
+				  break;
+				  system("cls");
+		  case 3: cout<<"3-.EL MAYOR DE TRES NUMEROS"<<endl;
+			      cout<<".ingrese el primer numero"<<endl;
+				  cin>>A;
+			      cout<<".ingrese el segundo numero"<<endl;
+				  cin>>B;
+			      cout<<".ingrese el segundo numero"<<endl;
+				  cin>>C;
+				  if(A>B)
+				    {if(A>C)
+				         {cout<<"el numero mayor es : "<<A<<endl;
+				         }
+					    else
+					     {cout<<".el numero mayor es"<<C<<endl;
+				         }
+
+				    }
+				   else
+				     {if(B>C)
+				        {cout<<"1-.el numero mayor es: "<<B<<endl;
+				        }
+				       else
+					    {cout<<"1-.el numero mayor es: "<<C<<endl;
+				        }
+                     }
+				  break;
+				  system("cls");
+		  case 0:cout<<"---- SALIR-----"<<endl;
+			  break;
+		  default: cout<<"numero incorrecto"<<endl;
+			  break;
+	}
+	getch();
+	system("cls");
+	}while(opcion!=0);
+	getch();
+	
+}
+
