@@ -1,0 +1,51 @@
+// salario neto.cpp : Defines the entry point for the console application.
+//
+
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#define afp 0.121
+#define iva 0.13
+#define SM 1420
+
+
+using namespace std;
+
+
+void main()
+{
+	int N, i;
+	float sb,sn,prom,suma;
+	system("color 2F");
+	cout<<"ingrese la cantidad de trabajadores: "<<endl;
+	cin>>N;
+	i=1;
+	suma=0;
+    while(i<=N)
+    {
+		cout<<"ingrese el salario neto del trabajador: "<<endl;
+		cin>>sb;
+		i=i+1;
+		if(sb>2*SM)
+		{
+			sn=(sb-(sb*afp)-(sb*iva));
+				if(sb>15000)
+				{
+					sn=(sb-(sb*afp)-(sb*iva)-(sb*0.01));
+				}
+		}
+		else
+		{
+			sn=sb-(sb*afp);
+
+		}
+		suma=suma+sn;
+			
+	 
+	
+	}
+	prom=suma/N;
+	cout<<"El promedio del salario neto es: "<<prom<<endl;
+	getch();
+}
