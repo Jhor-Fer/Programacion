@@ -150,7 +150,7 @@ void mostrar_paralelos(string nombre[], int nota[], int n)
 
 int busqueda_binaria(int A[], int n, int clave)
 {
-  int fin = -1,ini = 0,medio;
+  int fin = A[]-1,ini = 0,medio;
   while (ini <= fin)
     {
       medio = (fin + ini)/2;
