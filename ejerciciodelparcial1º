@@ -1,0 +1,109 @@
+// PARCIAL.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include <string>
+#include "conio.h"
+#define TAM 3
+
+using namespace std;
+
+void nombre(int vec[],int tam);
+void piloto(int vec[],int tam);
+void coche(int vec[],int tam);
+void salida(int vec[],int tam);
+void llegada(int vec[],int tam);
+void kilometros(int vec[],int tam);
+
+void main()
+{ int opc,n,vec[TAM];
+
+	do{
+		cout<<"1.-ingrese los nombres :"<<endl;
+		cout<<"2.-ingrese codigo de piloto :"<<endl;
+		cout<<"3.-ingrese numero de coche :"<<endl;
+		cout<<"4.-ingrese salida o partida :"<<endl;
+		cout<<"5.-ingrese la llegada o el destino :"<<endl;
+		cout<<"6.-cantidad recorrido en kilometros :"<<endl;
+		cout<<"0.-salir :"<<endl;
+		cin>>opc;
+getch();
+switch(opc)
+{
+case 1: cout<<"1.-ingrese los nombres :";
+	nombre(vec,n);
+	break;
+case 2: cout<<"1.-ingrese los nombres :";
+	piloto(vec,n);
+	break;
+case 3: cout<<"1.-ingrese los nombres :";
+	coche(vec,n);
+	break;
+case 4: cout<<"1.-ingrese los nombres :";
+	salida(vec,n);
+	break;
+case 5: cout<<"1.-ingrese los nombres :";
+	llegada(vec,n);
+	break;
+case 6: cout<<"1.-ingrese los nombres :";
+	kilometros(vec,n);
+	break;
+case 0: cout<<"1.-salir :";
+	break;
+default: cout<<"numero erroneo :";
+	
+	break;
+}
+
+	}while(opc!=0);
+	getch();
+}
+void nombre(int vec[],int tam)
+{int i;
+string nombre;
+	cout<<endl<<"ingrese el nombre: ";
+	for(i=0;i<TAM;i++)
+		getline(cin,nombre);
+	nombre=vec[i];
+}
+void piloto(int vec[],int tam)
+{int i;
+
+	cout<<endl<<"ingrese el codigo de cada piloto: ";
+	for(i=0;i<TAM;i++)
+		cin>>vec[i];
+	
+}
+void coche(int vec[],int tam)
+{int i;
+
+	cout<<endl<<"ingrese el numero de coche: ";
+	for(i=0;i<TAM;i++)
+		cin>>vec[i];
+	
+}
+void salida(int vec[],int tam)
+{int i;
+string salida;
+	cout<<endl<<"ingrese el punto de partida del coche: ";
+	for(i=0;i<TAM;i++)
+		getline(cin,salida);
+	salida=vec[i];
+}
+void llegada(int vec[],int tam)
+{int i;
+string llegada;
+	cout<<endl<<"ingrese el punto de llegada del coche: ";
+	for(i=0;i<TAM;i++)
+		getline(cin,llegada);
+	llegada=vec[i];
+}
+void kilometros(int vec[],int tam)
+{int i,s;
+
+	cout<<endl<<"ingrese el numero de coche: ";
+	for(i=0;i<TAM;i++)
+		cin>>vec[i];
+	s=s+vec[i];
+}
