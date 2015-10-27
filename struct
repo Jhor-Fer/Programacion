@@ -1,0 +1,82 @@
+// matriz de vector.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#define fila 15
+#define colm 15
+#define P 4
+
+struct vector;
+int vect;
+
+using namespace std;
+int llenarvector(int vec[]); 
+void matris(int matriz[fila][colm], int n,int m);
+void matrisT(int matriz[fila][colm], int vec[],int n,int m);
+int invertir(int vec[], int n);
+
+
+void main()
+{int matriz[fila][colm],n,m,vec[P];
+struct vect;
+do{
+ cout<<"ingrese numero de fila de la matris: "<<endl;
+ cin>>n;
+}while((n<0)||(n>15));
+do{
+ cout<<"ingrese numero de columnas de la matris: "<<endl;
+ cin>>m;
+}while((m<0)||(m>15));
+	matris(matriz,n,m);
+    matrisT( matriz,vec,n,m);
+	getch();
+}
+int llenarvector(int vec[])
+{int i;
+	cout<<"ingrese los elementos del vector en la matriz: "<<endl;
+	for(i=0;i<P;i++)
+	{cin>>vec[i];
+	}
+	return(vec[vect]);
+}
+
+void matris(int matriz[fila][colm], int n,int m)
+{int i,j,vec[P],vector;
+vector=llenarvector(vec);
+for(i=0;i<n;i++)
+   {for(j=0;j<m;j++)
+       {cout<<"["<<i<<"]["<<j<<"]:"<<vector;
+       cout<<"\n\t";
+       }
+   }
+}
+
+
+int invertir(int vec[], int n)
+{int vecr,aux,i,j,k,m;
+vecr=llenarvector(vec);
+for(i=0;i<n;i++)
+	{for(j=0;j<n;j++)
+		 {for(k=0;k<n;k++) 
+			aux=vecr;
+             {vecr=vec[j];
+             vec[j]=aux
+				 ;
+	       	 }
+        }
+    }
+return(aux);
+}
+void matrisT(int matriz[fila][colm], int vec[],int n,int m)
+{int i,j,vector,map;
+map=invertir(vec,n);
+vector=llenarvector(vec);
+for(i=0;i<n;i++)
+   {for(j=0;j<m;j++)
+       {cout<<"["<<i<<"]["<<j<<"]:"<<map;
+        cout<<"\n\t";
+       }
+   }
+}
